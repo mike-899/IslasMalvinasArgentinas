@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Gris muy oscuro */
+    color: #ffffff; /* Blanco */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 1rem; /* Base de font-size */
+}
+
+header {
+    background-color: #00509e; /* Celeste */
+    color: #ffffff; /* Blanco */
+    padding: 2rem;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem); /* Responsivo: mínimo 2rem, máximo 4rem */
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Barra de navegación superior */
+nav {
+    background-color: #003366; /* Celeste oscuro */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    white-space: nowrap; /* Evita que los elementos de la barra se envuelvan en varias líneas */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap; /* No permite que los elementos se envuelvan */
+    justify-content: left;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Responsivo */
+}
+
+nav ul li a:hover {
+    background-color: #004080; /* Celeste más oscuro */
+}
+
+/* Contenedor para la barra de navegación */
+.nav-container {
+    overflow: auto; /* Permite el desplazamiento horizontal si es necesario */
+    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Responsivo */
+}
+
+footer {
+    background-color: #111111; /* Gris aún más oscuro */
+    color: #ffffff; /* Blanco */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: clamp(0.8rem, 1.5vw, 1rem); /* Responsivo */
+}
+
+/* Sistema de tarjetas */
+.card {
+    background-color: #2e2e2e; /* Gris oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 2rem 0;
+    padding: 2rem;
+    transition: transform 0.2s;
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Responsivo */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #00509e; /* Celeste */
+    margin-bottom: 0px;
+    font-size: clamp(1.5rem, 3vw, 2rem); /* Responsivo */
+}
+
+.card-text {
+    color: #ffffff; /* Blanco */
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Responsivo */
+    margin-bottom: 1rem;
+}
+
+/* Clasificaciones */
+.highlight {
+    background-color: #ffd700; /* Amarillo */
+    color: #000000; /* Negro */
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 2vw, 1.1rem); /* Responsivo */
+}
+
+/* Formularios */
+form {
+    background-color: #2e2e2e; /* Gris oscuro */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    color: #00509e; /* Celeste */
+    margin-bottom: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Responsivo */
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a4a4a; /* Gris oscuro */
+    color: #ffffff; /* Blanco */
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Responsivo */
+}
+
+form button {
+    background-color: #00509e; /* Celeste */
+    color: #ffffff; /* Blanco */
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsivo */
+}
+
+form button:hover {
+    background-color: #004080; /* Celeste más oscuro */
+}
+
+/* Enlaces */
+a {
+    color: #00509e; /* Celeste */
+    text-decoration: none;
+    font-size: inherit; /* Inheriting font size from parent */
+}
+
+a:hover {
+    color: #ffffff; /* Blanco */
+    text-decoration: underline;
+}
